@@ -1,0 +1,177 @@
+@charset "utf-8";
+/* CSS Document */
+/*
+*	magenta	#910040
+*
+*/
+
+* {box-sizing: border-box;}
+
+
+.body
+{
+	width:500px;
+	height:500px;
+	margin:100px auto;
+	/*background-color:yellow;*/
+	background: url("../img/layout-background.jpg");
+	background-size: contain;
+}
+
+
+/********************* linker seitlicher Block *********************/
+
+header{
+	float: left;/**/
+	width:218px;
+	height:500px;
+	/*background-color: rgba(77,142,219,0.1); light blue*/
+}
+.rot270 {
+	width:500px;
+	height:218px;
+	position: relative;
+	transform-origin: 0% 0%;
+	transform: rotate(270deg);/**/
+	top: 500px; /*move down*/
+	/*background-color: rgba(79,195,237,0.1); light blue*/
+	padding-top: 110px;
+}
+h1, h2, h3, h4 {
+	padding:0; 
+	margin:0;
+	text-shadow: 
+		0 0 07px black, 
+		0 0 08px black, 
+		0 0 09px black, 
+		0 0 22px black; 
+}
+
+#name, #title, #date {
+	float:left;
+	display: inline-block;
+	/*border: 1px solid gray;*/
+	padding: 0 10px;
+}
+#title{
+	width:250px;
+	padding-top: 10px;
+	text-align: center;
+	font-size: 2.5rem;
+	color: rgba(145,0,64,1.00);
+}
+#name, #date {
+	width: 125px;
+	margin-top: 55px;
+	font-size: 0.75rem;
+	color: rgba(128,108,119,1.00);
+}
+#date {text-align: right;}
+
+
+/********************* Reiter der Menüelemente *********************/
+
+main {
+	position:relative;
+	left: -50px;
+	float:left;
+	width:282px;
+	height:500px;
+	/*background-color: rgba(241,83,86,0.1); red*/
+	
+	transform: scale(0.9);
+	color: rgba(43,39,42,1.00);
+}
+
+/********************* die einzelnen Menüelemente *********************/
+
+.element {
+	/*269px x 85px*/
+	transform-origin:  0% 50%;
+	display: inline-block;
+	width: 269px;
+	height: 85px;
+	/*border: 1px solid gray;*/
+	margin:0;
+	padding:0;
+	
+	position: relative;
+	transition: transform 0.2s;
+	transition-timing-function: ease;
+	
+	perspective: 1000px;
+}
+
+
+.element img {
+	position: absolute;
+	top:50%;
+	left:0%;
+	height:100%;
+	width:100%;
+	transition: left 0.2s,top 0.2s, transform 0.2s, filter 0.2s;
+	transition-timing-function: ease;
+}
+
+.element:not(:hover) img{
+	transform: scale(0.8);
+	top:0%;
+	left:-10%;
+	filter: contrast(1.5);
+}
+.element:hover img{
+	transform: scale(1),;
+	top:0%;
+	left:5%;
+	filter: contrast(1);
+}
+
+
+.element a, .element span
+{
+	text-decoration: none;
+	color: inherit;
+}
+
+.element a span {
+	position: relative;
+	transition: margin-left 0.2s, font-size 0.2s;
+	transition-timing-function: ease;
+	z-index: 1;
+}
+
+.element:not(:hover) a span{
+	margin-left: 25px;
+	line-height: 88px;
+	font-size: 1rem;
+}
+.element:hover a span{
+	margin-left: 40px;
+	line-height: 88px;
+	font-size: 1.25rem;
+}
+
+.rot3d {
+	position: relative;
+	transition: transform 0.2s, filter 0.2s;
+	transform: rotateY(-5deg);
+	transition-timing-function: ease;
+	transform-origin: 0% 50%;
+	filter: brightness(0.6);
+}
+.rot3d:hover {
+	transform:rotateY(-35deg);
+	filter: brightness(0.9);
+	z-index: 2;
+}
+
+
+/************* Rotation und Position der Menüelemente *****************/
+
+#el1 {transform:rotate(-45deg); top:  95px; left: 008px;}
+#el2 {transform:rotate(-30deg); top:  40px; left: 030px;}
+#el3 {transform:rotate(-15deg); top: -10px; left: 045px;}
+#el4 {transform:rotate(  0deg); top: -55px; left: 050px;}
+#el5 {transform:rotate( 15deg); top:-100px; left: 045px;}
+#el6 {transform:rotate( 30deg); top:-150px; left: 030px;}
+#el7 {transform:rotate( 45deg); top:-205px; left: 008px;}

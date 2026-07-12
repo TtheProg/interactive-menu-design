@@ -1,0 +1,38 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face {
+	font-family: "ethnocentric";
+	src: url("../fonts/ethnocentric/Ethnocentric Rg.otf")
+}
+@font-face {
+	font-family: "junglefever";
+	src: url("../fonts/junglefever/JungleFeverNF.otf")
+}
+@font-face {
+	font-family: "musicals";
+	src: url("../fonts/musicals/musicals.ttf")
+}
+@font-face {
+	font-family: "slugfest";
+	src: url("../fonts/slugfest/SlugfestNF.otf")
+}
+@font-face {
+	font-family: "spicy-rice";
+	src: url("../fonts/spicy-rice/SpicyRice-Regular.ttf")
+}
+@font-face {
+	font-family: "bangers";
+	src: url("../fonts/bangers/Bangers.ttf")
+}
+@font-face {
+	font-family: "intro-cond";
+	src: url("../fonts/intro-cond/Intro Cond Black Free.otf")
+}
+
+*{
+	font-size: 1.2em;
+	font-family: bangers, ethnocentric, Impact, "Arial Black", sans-serif;
+}
+
+
