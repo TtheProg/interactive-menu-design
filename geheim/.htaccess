@@ -1,7 +1,0 @@
-# .htaccess-Datei für Web-Verzeichnis /geheim   
-	AuthType Basic
-	AuthName "Geheime Daten"
-	AuthUserFile c:/xampp/htdocs/.htusers
-
-	Require user  anton test quasimodo Dana Bruno
-
