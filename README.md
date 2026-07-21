@@ -1,5 +1,7 @@
 # Interactive Menu Design
 
+**[→ Live-Demo: ttheprog.github.io/interactive-menu-design](https://ttheprog.github.io/interactive-menu-design/)**
+
 Ein reines **HTML- & CSS-Designexperiment**: ein Photoshop-Layout wird 1:1 als
 interaktives Web-Menü nachgebaut. Sieben pfeilförmige Menü-Banner liegen im Bogen
 gefächert übereinander und klappen beim Überfahren mit der Maus in 3D auf.
@@ -37,10 +39,11 @@ Die Maus-Animation in Bewegung:
   ([`sackgasse.html`](sackgasse.html)) statt ins Leere. So bleibt das Menü komplett
   durchklickbar, ohne etwas vorzutäuschen.
 
-### 📋 Ausblick
-- **Interaktive Live-Version** — das Menü als eigenständiges, öffentliches Projekt
-  hostbar machen; interne Links und unfertige Unterseiten sind dafür bereits
-  entfernt bzw. auf die Sackgasse umgeleitet.
+### 🌐 Live
+- **GitHub Pages** — die interaktive Version läuft öffentlich unter
+  [ttheprog.github.io/interactive-menu-design](https://ttheprog.github.io/interactive-menu-design/).
+  Interne Links und unfertige Unterseiten sind auf [`sackgasse.html`](sackgasse.html)
+  umgeleitet, sodass das Menü vollständig durchklickbar bleibt.
 
 ## Tech-Stack
 - **HTML5** – statische Seiten, kein Build-Schritt.
